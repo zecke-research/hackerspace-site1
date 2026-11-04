@@ -28,7 +28,7 @@ export default function Home() {
             <p className="eyebrow">
               <span aria-hidden="true" /> HackerSpace
             </p>
-            <h1 id="titulo">HackerSpace Nodo Serrano</h1>
+            <h1 id="titulo">Aprender y construir en comunidad</h1>
             <p className="hero-description">
               Un espacio para aprender haciendo. Tecnología, herramientas y
               conocimiento compartido desde Tandil.
