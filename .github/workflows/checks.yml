@@ -1,0 +1,22 @@
+name: Checks del workshop
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: [self-hosted, linux, workshop]
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Instalar dependencias
+        run: pnpm install --frozen-lockfile
+      - name: Biome
+        run: pnpm lint
+      - name: TypeScript
+        run: pnpm typecheck
