@@ -1,0 +1,14 @@
+{
+  "name": "GitHub AI Workshop",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:5.2.5-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:2": {
+      "version": "22",
+      "pnpmVersion": "10.20.0"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "2.103.3"
+    }
+  },
+  "forwardPorts": [3000]
+}
